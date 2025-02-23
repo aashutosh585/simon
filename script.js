@@ -8,11 +8,7 @@ let started = false;
 let level = 0;
 
 let h2 = document.querySelector("h2");
-
 let start = document.querySelector(".start");
-
-
-
 
 start.addEventListener("click", function () {
     if (!started) {
@@ -22,15 +18,13 @@ start.addEventListener("click", function () {
     }
 });
 
-
-
-
 function flash(btn) {
     btn.classList.add("flash");
     setTimeout(() => {
         btn.classList.remove("flash");
     }, 250);
 }
+
 function userFlash(btn) {
     btn.classList.add("gren");
     setTimeout(() => {
